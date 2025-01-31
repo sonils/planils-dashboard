@@ -1,4 +1,4 @@
-FROM node:20.11.1-alpine3.19 as build
+FROM node:20.11.1-alpine3.19 AS build
 RUN apk update && apk upgrade
 WORKDIR /app
 COPY package* ./
